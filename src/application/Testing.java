@@ -8,7 +8,7 @@ import chess.ChessMatch;
 import chess.ChessPiece;
 import chess.ChessPosition;
 
-public class Main {
+public class Testing {
 public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -17,7 +17,7 @@ public static void main(String[] args) {
 		while (true) {
 			try{
 				UI.clearScreen();
-				UI.printBoard(chessMatch.getPieces());
+				UI.printMatch(chessMatch);
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
